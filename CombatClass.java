@@ -17,9 +17,9 @@ public class CombatClass implements Strategy
 
 	@Override
 	public void execute()
-	{
-		if(Players.getMyPlayer().isInCombat())
-		{
+	{	
+		//if(Players.getMyPlayer().isInCombat())
+		//{
 			for(Player target : Players.getNearest())
 			{
 				if(target.getName().toLowerCase().contains(enemy.toLowerCase()))
@@ -32,6 +32,6 @@ public class CombatClass implements Strategy
 					break;
 				}
 			}
-		}
+		//}
 	}
 }
